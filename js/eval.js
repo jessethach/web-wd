@@ -28,37 +28,24 @@ function Lupus()  {
   var eval1space = document.getElementById('eval1');
   var eval2space = document.getElementById('eval2');
   var eval3space = document.getElementById('eval3');
-
   function LupusPhaseOne()  {
     var words = 'Behold I am the phase one function of Lupus';
     var wordsNode = document.createTextNode(words);
     eval1space.appendChild(wordsNode);
   } // end of LupusPhaseOne
-
-
   function LupusPhaseTwo()  {
     var words = 'And I am the very model of a modern major general';
     var wordsNode = document.createTextNode(words);
     eval2space.appendChild(wordsNode);
-
-
   } // end of LupusPhaseTwo
-
-
   function LupusPhaseThree()  {
     var img = document.createElement("img");
     eval3space.appendChild(img);
     img.src = '/home/jared/b34/web-wd/img/logo.png';
-
-
-
-
   } // end of LupusPhaseThree
-
   function LupusExit()  {
     window.location.href = "results.html";
   }
-
 setTimeout(function() {
     LupusPhaseOne();
 }, 0);
@@ -71,29 +58,62 @@ setTimeout(function() {
 setTimeout(function() {
   LupusExit();
 }, 9000);
-
-
-
 };  // end of Lupus function
 
+function PrintWords(where,what,timer)	{
+	this.where = where;
+	this.what = what;
+	this.timer = timer;
+	settimeout(function()	{
+		var wordsNode = document.createTextNode(what);
+		where.appendChild(wordsNode);
+		var linebreak = document.createElement("br");
+		where.appendChild(linebreak);
+	}, timer);
+};	// end of PrintWords function
 
-function Cancer() {
-  console.log("Cancer Function has been triggered");
-}
+function EmbarrassingSymptom()  {
+  console.log("Embarrassing Symptom has been triggered");
+  var eval1space = document.getElementById('eval1');
+  	setTimeout(function() {
+	  	var words = 'Hello there!';
+	  	PrintWords(eval1space,words);
+	  	}, 2000);
+  	setTimeout(function() {
+	  	words = 'My name is Doctor Clayton, I\'ll be your online physician.';
+	  	PrintWords(eval1space,words);
+	  	}, 4000);
+  	setTimeout(function() {
+	  	words = 'My name is Doctor Clayton, I\'ll be your online physician.';
+	  	PrintWords(eval1space,words);
+	  	}, 8000);
+  	setTimeout(function() {
+	  	words = 'My name is Doctor Clayton, I\'ll be your online physician.';
+	  	PrintWords(eval1space,words);
+	  	}, 12000);
 
-function WeirdGrowth()  {
-  console.log("Weird Growth Function has been triggered");
-}
+  function EmbarrassingSymptom2()  {
+	    var words = 'And I am the very model of a modern major general';
+	    var wordsNode = document.createTextNode(words);
+	    eval2space.appendChild(wordsNode);
+	  	} // end of EmbarrassingSymptomPhaseTwo
+  function EmbarrassingSymptom3()  {
+	    var img = document.createElement("img");
+	    eval3space.appendChild(img);
+	    img.src = '/home/jared/b34/web-wd/img/logo.png';
+	  	} // end of EmbarrassingSymptomPhaseThree
+  function EmbarrassingSymptomX()  {
+	  	debugger;
+	    window.location.href = "results.html";
+	  	}
 
-function OnFire() {
-  console.log("On Fire Function has been triggered");
-}
-
-// this is where we need to actually call the function
+};  // end of EmbarrassingSymptom
 
 
 if (runMe == 'Lupus') {
   Lupus();
 }
-
+if (runMe == 'EmbarrassingSymptom')	{
+	EmbarrassingSymptom();
+};
 
