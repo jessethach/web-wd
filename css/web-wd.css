@@ -1,0 +1,33 @@
+.hide section p {
+  display: none;
+}
+
+.center-box {
+  width: 50%;
+  margin: auto;
+  padding: 10px;
+  border-style: 1px;
+}
+
+/*Nav menu*/
+header nav ol {
+  margin: 0px;
+  padding: 15px 15px 15px 30px;
+  border-bottom: 1px solid #eee;
+}
+
+header nav ol li {
+  color: #31353D;
+  display: inline;
+  margin-right: 40px;
+  letter-spacing: 0.07em;
+  text-align: center;
+}
+
+header nav li a {
+  color: #31353D;
+}
+
+header nav li a:hover {
+  color: #445878;
+}
