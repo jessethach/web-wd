@@ -20,9 +20,7 @@ var Condition = function(listedCondition) {
 
 
 new Condition ('Lupus','lupus');
-new Condition ('Cancer','cancer');
-new Condition ('Weird Growth','weirdGrowth');
-new Condition ('On Fire','onFire');
+new Condition ('Embarrassing Symptom','embarrassingsymptom');
 
 
 // ,lupusFunction
