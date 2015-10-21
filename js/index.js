@@ -21,9 +21,10 @@ var Condition = function(listedCondition) {
 
 new Condition ('Lupus','lupus');
 new Condition ('Embarrassing Symptom','embarrassingsymptom');
-new Condition ('Respitory', 'respitory');
+new Condition ('Respiratory', 'respiratory');
 new Condition ('Feet', 'feet');
 new Condition ('Rash', 'rash');
+new Condition ('Balding','bald');
 
 // ,lupusFunction
 // ,cancerFunction
