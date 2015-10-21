@@ -21,32 +21,27 @@
     <section class="center-box">
       <form>
       <!-- insert script into head which populates from local storage if returning user-->
+        <fieldset>
         <legend>Patient Information</legend>
-        <br>
-        Patient Name *:
-        <input type="text" id="patientName" />
-        <br>
-        Patient Age (in Earth years) *:
-        <input type="text" id="patientAge" length="10"/>
-        <br />
-        Gender *:
-        <br />
         <p>
+        <label for="name">Name</label>
+        <input type="text" id="patientName" />
+        </p>
+        <p>
+        <label for="name">Patient Age (in Earth years) *:</label>
+        <input type="text" id="patientAge" length="10"/>
+        </p>
+        <p><label for="gender">Gender *:</label>
         <input id="male" type="radio" name="gender" value="m">
-        Male
+        <label for="male">Male</label>
         <input id="female" type="radio" name="gender" value="f">
-        Female
+        <label for="female">Female</label>
+        </p>
 
-        <br />
-        <select id="conditionList">
-
-        </select>
-        <br>
-        <br>
-        * required field
-        <br>
+        <select id="conditionList"></select>
         <input id="submitButton" type="button" value="clickme" />
-
+        <!-- <p>* required field</p> -->
+        </fieldset>
       </form>
     </section>
 

@@ -35,3 +35,27 @@ header nav li a:hover {
 .imgsect img {
   max-width: 300px;
 }
+
+.imgsect button {
+
+}
+
+
+/*main page form*/
+.center-box legend {
+  margin: 1rem 1rem 1rem 5rem;
+}
+
+/*.center-box #patientAge {
+  float:right;
+  clear:both;
+}*/
+
+.center-box #patientName {
+  /*float:right;*/
+  /*clear:both;*/
+}
+
+.center-box fieldset {
+  border: 1px solid #D1D1D1;
+}
