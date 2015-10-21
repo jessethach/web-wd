@@ -47,6 +47,7 @@ function Lupus()  {
     window.location.href = "results.html";
   }
 
+
 setTimeout(function() {
     LupusPhaseOne();
 }, 0);
@@ -105,13 +106,60 @@ function EmbarrassingSymptom()  {
 	    img.src = '/home/jared/b34/web-wd/img/logo.png';
 	  	} // end of EmbarrassingSymptomPhaseThree
   function EmbarrassingSymptomX()  {
-	  	debugger;
 	    window.location.href = "results.html";
 	  	}
 
 };  // end of EmbarrassingSymptom
 
-};  // end of Lupus function
+//respitory function declared
+function respitory()  {
+  var eval1space = document.getElementById('eval1');
+  var eval2space = document.getElementById('eval2');
+  var eval3space = document.getElementById('eval3');
+
+    function respitoryPhaseOne()  {
+      var words = 'Let us take a look at you...' ;
+      var wordsNode = document.createTextNode(words);
+      eval1space.appendChild(wordsNode);
+    } // end of respitoryPhaseOne
+
+    function respitoryPhaseTwo()  {
+      var img = document.createElement("img");
+      eval2space.appendChild(img);
+      img.src = 'img/xray-lungs.jpg';
+    } //end of respitoryPhaseThree
+
+    function respitoryPhaseThree()  {
+      var words = 'Ouch... I bet you feel like a fish with no water, right?';
+      var wordsNode = document.createTextNode(words);
+      eval3space.appendChild(wordsNode);
+    } //end of respitoryPhaseThree
+
+    //create button with event listener that will take you to the next page
+    function createButton() {
+      var btn = document.createElement("BUTTON");        // Create a <button> element
+      var t = document.createTextNode("See Results");       // Create a text node
+      btn.appendChild(t);                                // Append the text to <button>
+      eval3space.appendChild(btn);
+          btn.addEventListener('click', function() {
+          window.location.href = "results.html";
+      });
+    }
+
+// Timing the respitory function
+setTimeout(function() {
+    respitoryPhaseOne();
+}, 0);
+setTimeout(function() {
+    respitoryPhaseTwo();
+}, 3000);
+setTimeout(function() {
+    respitoryPhaseThree();
+    createButton();
+}, 6000);
+// setTimeout(function() {
+//   LupusExit();
+// }, 9000);
 
 
 //respitory function declared
@@ -166,6 +214,57 @@ setTimeout(function() {
 
 }; //End of respitory function
 
+
+//feet function declared
+function feet()  {
+  var eval1space = document.getElementById('eval1');
+  var eval2space = document.getElementById('eval2');
+  var eval3space = document.getElementById('eval3');
+
+    function feetPhaseOne()  {
+      var words = 'Alright, let\'s get those shoes off...' ;
+      var wordsNode = document.createTextNode(words);
+      eval1space.appendChild(wordsNode);
+    } // end of feetPhaseOne
+
+    function feetPhaseTwo()  {
+      var img = document.createElement("img");
+      eval2space.appendChild(img);
+      img.src = 'https://turnernbaallball.files.wordpress.com/2014/04/brooklyn-nets-bench.gif';
+    } //end of feetPhaseThree
+
+    function feetPhaseThree()  {
+      var words = 'Wow... that is pungent';
+      var wordsNode = document.createTextNode(words);
+      eval3space.appendChild(wordsNode);
+    } //end of feetPhaseThree
+
+    function createButton() {
+      var btn = document.createElement("BUTTON");        // Create a <button> element
+      var t = document.createTextNode("See Results");       // Create a text node
+      btn.appendChild(t);                                // Append the text to <button>
+      eval3space.appendChild(btn);
+          btn.addEventListener('click', function() {
+          window.location.href = "results.html";
+      });
+    }
+
+// Timing the feet function
+setTimeout(function() {
+    feetPhaseOne();
+}, 0);
+setTimeout(function() {
+    feetPhaseTwo();
+}, 3000);
+setTimeout(function() {
+    feetPhaseThree()
+    createButton();
+}, 6000);
+// setTimeout(function() {
+//   LupusExit();
+// }, 9000);
+
+}; //End of feet function
 
 //feet function declared
 function feet()  {

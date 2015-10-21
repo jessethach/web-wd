@@ -25,8 +25,6 @@ new Condition ('Respitory', 'respitory');
 new Condition ('Feet', 'feet');
 new Condition ('Rash', 'rash');
 
-
-
 // ,lupusFunction
 // ,cancerFunction
 // ,weirdgrowthFunction
