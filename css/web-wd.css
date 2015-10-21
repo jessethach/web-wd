@@ -31,3 +31,7 @@ header nav li a {
 header nav li a:hover {
   color: #445878;
 }
+
+.imgsect img {
+  max-width: 300px;
+}
