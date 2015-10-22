@@ -94,6 +94,9 @@ function medicalMystery()  {
 
 };  // end of Medical Mystery function
 
+
+
+
 //respitory function declared
 function respiratory()  {
   var eval1space = document.getElementById('eval1');
@@ -102,14 +105,16 @@ function respiratory()  {
 
   function respiratoryPhaseOne() {
     var eval1space = document.getElementById('eval1');
-    var words = 'lets us take a look at you...';
+    var words = 'I see you\'re having some respiratory issues.';
     PrintWords(eval1space,words,0);
   }; //end of resiratoryPhaseOne
 respiratoryPhaseOne();
 
   function respiratoryPhaseTwo() {
     var eval2space = document.getElementById('eval2');
-    PrintImage(eval2space,'img/xray-lungs.jpg',3000);
+    words = 'I will to need to preform a chest scan to determine the problem, please hold still.';
+    PrintWords(eval2space,words,3000);
+    PrintImage(eval2space,'img/xray-lungs.jpg',6000);
   };
 respiratoryPhaseTwo();
 
@@ -125,7 +130,8 @@ respiratoryPhaseTwo();
 
   function respiratoryPhaseThree() {
     var eval3space = document.getElementById('eval3');
-    PrintWords(eval3space,'Ouch... I bet you feel like a fish with no water, right?',6000);
+    words = 'Please proceed to the results page while I review your scan.';
+    PrintWords(eval3space,words,6000);
     setTimeout(function() {
       createButton();
     }, 6000);
@@ -144,7 +150,7 @@ function feet()  {
 
   function feetPhaseOne() {
     var eval1space = document.getElementById('eval1');
-    var words = 'Alright, let\'s get those shoes off...';
+    var words = 'I see you have an issue with your feet, I\'ll need you to remove your shoes.';
     PrintWords(eval1space,words,0);
   }; //end of feetPhaseOne
   feetPhaseOne();
@@ -154,7 +160,6 @@ function feet()  {
     PrintImage(eval2space,'img/smelly.gif',3000);
   };
   feetPhaseTwo();
-
 
   function createButton() {
         var btn = document.createElement("BUTTON");        // Create a <button> element
@@ -166,10 +171,10 @@ function feet()  {
         });
       };
 
-
   function feetPhaseThree() {
     var eval3space = document.getElementById('eval3');
-    PrintWords(eval3space,'Wow... that is pungent',6000);
+    words = 'Wow... that is pungent.  Please put your shoes back on and proceed to the results page.'
+    PrintWords(eval3space,words,6000);
     setTimeout(function() {
       createButton();
     }, 6000);
@@ -180,102 +185,50 @@ feetPhaseThree();
 
 
 
-
-    // function feetPhaseOne()  {
-    //   var words = 'Alright, let\'s get those shoes off...' ;
-    //   var wordsNode = document.createTextNode(words);
-    //   eval1space.appendChild(wordsNode);
-    // } // end of feetPhaseOne
-
-    // function feetPhaseTwo()  {
-    //   var img = document.createElement("img");
-    //   eval2space.appendChild(img);
-    //   img.src = 'https://turnernbaallball.files.wordpress.com/2014/04/brooklyn-nets-bench.gif';
-    // } //end of feetPhaseThree
-
-    // function feetPhaseThree()  {
-    //   var words = 'Wow... that is pungent';
-    //   var wordsNode = document.createTextNode(words);
-    //   eval3space.appendChild(wordsNode);
-    // } //end of feetPhaseThree
-
-    // function createButton() {
-    //   var btn = document.createElement("BUTTON");        // Create a <button> element
-    //   var t = document.createTextNode("See Results");       // Create a text node
-    //   btn.appendChild(t);                                // Append the text to <button>
-    //   eval3space.appendChild(btn);
-    //       btn.addEventListener('click', function() {
-    //       window.location.href = "results.html";
-    //   });
-    // }
-
-// Timing the feet function
-// setTimeout(function() {
-//     feetPhaseOne();
-// }, 0);
-// setTimeout(function() {
-//     feetPhaseTwo();
-// }, 3000);
-// setTimeout(function() {
-//     feetPhaseThree()
-//     createButton();
-// }, 6000);
-// setTimeout(function() {
-//   LupusExit();
-// }, 9000);
-
-
 //rash function declared
 function rash()  {
   var eval1space = document.getElementById('eval1');
   var eval2space = document.getElementById('eval2');
   var eval3space = document.getElementById('eval3');
 
-    function rashPhaseOne()  {
-      var words = 'Got a rash, huh? Does it look like this?' ;
-      var wordsNode = document.createTextNode(words);
-      eval1space.appendChild(wordsNode);
-    } // end of respitoryPhaseOne
+  function rashPhaseOne() {
+    var eval1space = document.getElementById('eval1');
+    var words = 'Got a rash, huh? Does it look like this?';
+    PrintWords(eval1space,words,0);
+  }; //end of rashPhaseOne
+  rashPhaseOne();
 
-    function rashPhaseTwo()  {
-      var img = document.createElement("img");
-      eval2space.appendChild(img);
-      img.src = 'img/rash.png';
-    } //end of respitoryPhaseThree
+  function rashPhaseTwo() {
+    var eval2space = document.getElementById('eval2');
+    PrintImage(eval2space,'img/rash.png',3000);
+  };
+  rashPhaseTwo();
 
-    function rashPhaseThree()  {
-      var words = 'I\'ve come up with an interesting theory...';
-      var wordsNode = document.createTextNode(words);
-      eval3space.appendChild(wordsNode);
-    } //end of respitoryPhaseThree
+  function createButton() {
+        var btn = document.createElement("BUTTON");        // Create a <button> element
+        var t = document.createTextNode("See Results");       // Create a text node
+        btn.appendChild(t);                                // Append the text to <button>
+        eval3space.appendChild(btn);
+            btn.addEventListener('click', function() {
+            window.location.href = "results.html";
+        });
+      };
 
-    function createButton() {
-      var btn = document.createElement("BUTTON");        // Create a <button> element
-      var t = document.createTextNode("See Results");       // Create a text node
-      btn.appendChild(t);                                // Append the text to <button>
-      eval3space.appendChild(btn);
-          btn.addEventListener('click', function() {
-          window.location.href = "results.html";
-      });
-    }
+   function rashPhaseThree() {
+    var eval3space = document.getElementById('eval3');
+    words = 'I\'ve come up with an interesting theory...';
+    PrintWords(eval3space,words,6000);
+    setTimeout(function() {
+      createButton();
+    }, 6000);
+  };
+rashPhaseThree();
+}; //End of rash function
 
-// Timing the respitory function
-setTimeout(function() {
-    rashPhaseOne();
-}, 0);
-setTimeout(function() {
-    rashPhaseTwo();
-}, 3000);
-setTimeout(function() {
-    rashPhaseThree();
-    createButton();
-}, 6000);
-// setTimeout(function() {
-//   LupusExit();
-// }, 9000);
 
-};  // end of rash function
 
+
+//rash function declared
 function bald()  {
   console.log("bald Function has been triggered");
   var eval1space = document.getElementById('eval1');
