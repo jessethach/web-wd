@@ -31,7 +31,7 @@ new Condition ('Balding','bald');
 // ,weirdgrowthFunction
 // ,onfireFunction
 
-var submitButton = document.getElementById("submitButton");
+var submitButton = document.getElementById("frontSubmitButton");
 
 
 

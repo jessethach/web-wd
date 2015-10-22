@@ -1,12 +1,8 @@
-.hide section p {
-  display: none;
-}
-
 .center-box {
-  width: 60%;
+  width: 50%;
   margin: auto;
-  padding: 10px;
-  border-style: 1px;
+  padding-top: 6rem;
+  padding-bottom: 10rem;
 }
 
 /*Nav menu*/
@@ -32,14 +28,25 @@ header nav li a:hover {
   color: #445878;
 }
 
-.imgsect img {
-  max-width: 300px;
+header img {
+  width: 75px;
+  position: absolute;
+  top: 0rem;
+  right: 5rem;
 }
 
-.imgsect button {
+/*////////////////////////////////////////////*/
 
+/*footer*/
+footer {
+  border-top: 1px solid #eee;
+  padding: 15px 15px 15px 30px;
+  font-size: 12px;
 }
 
+
+
+/*////////////////////////////////////////////*/
 
 /*main page form*/
 .center-box legend {
@@ -56,18 +63,72 @@ header nav li a:hover {
  padding: 2rem 0rem 2rem 0rem;
 }
 
-/*.center-box label {
-padding-left: 5rem;
-}*/
-
 .center-box #conditionList {
   padding: 2rem 0rem 2rem 0rem;
   /*clear:both;*/
 }
 
-/*.center-box fieldset {
-  border: 1px solid #D1D1D1;
-}*/
+form #frontSubmitButton {
+  top: 2rem;
+  left: 2rem;
+  position: relative;
+  right:    0;
+  bottom:   0;
+}
 
-form #submitButton {
+/*////////////////////////////////////////////*/
+
+/*eval page*/
+
+.imgsect {
+  width: 80%;
+  margin: auto;
+}
+
+.imgsect img {
+  max-width: 300px;
+  max-height: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imgsect button {
+  float: right;
+}
+
+.evalcontainer {
+  padding: 3rem 0rem 3rem 0rem;
+}
+
+#eval3 {
+  padding-bottom: 5rem;
+}
+
+/*////////////////////////////////////////////*/
+
+/*charity info*/
+
+.charity img {
+  max-width: 150px;
+  /*padding-bottom: 30px;*/
+  border: 1px solid #eee;
+}
+
+/*results page*/
+
+#results-box-left {
+  padding: 3rem 0rem 3rem 0rem;
+}
+
+#results-box-right {
+  padding: 3rem 0rem 3rem 0rem;
+}
+
+#results-box-left img {
+  max-height: 300px;
+  max-width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
