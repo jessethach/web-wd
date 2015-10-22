@@ -106,7 +106,7 @@ function EmbarrassingSymptom()  {
         while (myNode.firstChild) {
           myNode.removeChild(myNode.firstChild);
         };
-      }, 38000);     
+      }, 38000);
     };   // end of EmbarrassingSymptom2
     EmbarrassingSymptom2();
     function EmbarrassingSymptom3()  {
@@ -133,51 +133,76 @@ function EmbarrassingSymptom()  {
 
 
 //respitory function declared
-function Respiratory()  {
+function respiratory()  {
   var eval1space = document.getElementById('eval1');
   var eval2space = document.getElementById('eval2');
   var eval3space = document.getElementById('eval3');
 
-    function RespiratoryPhaseOne()  {
-      var words = 'Let us take a look at you...' ;
-      var wordsNode = document.createTextNode(words);
-      eval1space.appendChild(wordsNode);
-    } // end of respitoryPhaseOne
+  function respiratoryPhaseOne() {
+    var eval1space = document.getElementById('eval1');
+    var words = 'lets us take a look at you...';
+    PrintWords(eval1space,words,0);
+  }; //end of resiratoryPhaseOne
+  respiratoryPhaseOne();
 
-    function RespiratoryPhaseTwo()  {
-      var img = document.createElement("img");
-      eval2space.appendChild(img);
-      img.src = 'img/xray-lungs.jpg';
-    } //end of respitoryPhaseThree
+  function respiratoryPhaseTwo() {
+    var eval2space = document.getElementById('eval2');
+    PrintImage(eval2space,'img/xray-lungs.jpg',3000);
+  };
+  respiratoryPhaseTwo();
 
-    function RespiratoryPhaseThree()  {
-      var words = 'Ouch... I bet you feel like a fish with no water, right?';
-      var wordsNode = document.createTextNode(words);
-      eval3space.appendChild(wordsNode);
-    } //end of respitoryPhaseThree
+  function createButton() {
+        var btn = document.createElement("BUTTON");        // Create a <button> element
+        var t = document.createTextNode("See Results");       // Create a text node
+        btn.appendChild(t);                                // Append the text to <button>
+        eval3space.appendChild(btn);
+            btn.addEventListener('click', function() {
+            window.location.href = "results.html";
+        });
+      };
+
+  function respiratoryPhaseThree() {
+    var eval3space = document.getElementById('eval3');
+    PrintWords(eval3space,'Ouch... I bet you feel like a fish with no water, right?',6000);
+    setTimeout(function() {
+      createButton();
+    }, 6000);
+  };
+  respiratoryPhaseThree();
+
+
+    // function respiratoryPhaseOne()  {
+    //   var words = 'Let us take a look at you...' ;
+    //   var wordsNode = document.createTextNode(words);
+    //   eval1space.appendChild(wordsNode);
+    // } // end of respitoryPhaseOne
+
+    // function respiratoryPhaseTwo()  {
+    //   var img = document.createElement("img");
+    //   eval2space.appendChild(img);
+    //   img.src = 'img/xray-lungs.jpg';
+    // } //end of respitoryPhaseThree
+
+    // function respiratoryPhaseThree()  {
+    //   var words = 'Ouch... I bet you feel like a fish with no water, right?';
+    //   var wordsNode = document.createTextNode(words);
+    //   eval3space.appendChild(wordsNode);
+    // } //end of respitoryPhaseThree
 
     //create button with event listener that will take you to the next page
-    function createButton() {
-      var btn = document.createElement("BUTTON");        // Create a <button> element
-      var t = document.createTextNode("See Results");       // Create a text node
-      btn.appendChild(t);                                // Append the text to <button>
-      eval3space.appendChild(btn);
-          btn.addEventListener('click', function() {
-          window.location.href = "results.html";
-      });
-    }
+
 
 // Timing the respitory function
-setTimeout(function() {
-    RespiratoryPhaseOne();
-}, 0);
-setTimeout(function() {
-    RespiratoryPhaseTwo();
-}, 3000);
-setTimeout(function() {
-    RespiratoryPhaseThree();
-    createButton();
-}, 6000);
+// setTimeout(function() {
+//     respiratoryPhaseOne();
+// }, 0);
+// setTimeout(function() {
+//     respiratoryPhaseTwo();
+// }, 3000);
+// setTimeout(function() {
+//     respiratoryPhaseThree();
+//     createButton();
+// }, 6000);
 // setTimeout(function() {
 //   LupusExit();
 // }, 9000);
@@ -293,64 +318,33 @@ function bald()  {
   var eval2space = document.getElementById('eval2');
   var eval3space = document.getElementById('eval3');
 
+  function baldPhaseOne() {
+    var eval1space = document.getElementById('eval1');
+    PrintImage(eval1space,'img/firstDoctor.png',0);
+    var words = 'Hello, I\'m Dr.Hackenbush, and I\'ll be your online physician.';
+    PrintWords(eval1space,words,2000);
+    words = 'I understand you have a balding problem, please wait while I do a scan to determine how severe the problem is.';
+    PrintWords(eval1space,words,4000);
+   }; //end of baldingPhaseOne
+   baldPhaseOne();
 
-  function baldPhaseOne()  {
-      var words = 'Hello, I\'m Dr.Hackenbush, and I\'ll be your online physician.';
-      var wordsNode = document.createTextNode(words);
-      eval1space.appendChild(wordsNode);
-    } // end of baldPhaseOne
+  function baldPhaseTwo() {
+    var eval2space = document.getElementById('eval2');
+    words = 'SCAN INITIALIZING ...';
+    PrintWords(eval2space,words,6000)
+    PrintImage(eval2space,'img/baldScan.gif',8000);
+    words = 'Please wait while I review your scan.';
+    PrintWords(eval2space,words,10000);
+   }; //end of baldPhaseTwo
+   baldPhaseTwo();
 
-
-    function baldPhaseTwo()  {
-      var words = 'I understand you have a balding problem, please look at the ground while I do a scan to determine how severe the problem is.' ;
-      var wordsNode = document.createTextNode(words);
-      eval2space.appendChild(wordsNode);
-    } // end of baldPhaseTwo
-
-
-
-    function baldPhaseThree()  {
-      var words = 'Oh wow, you weren\'t joking... Please wait while I come up with a solution.' ;
-      var wordsNode = document.createTextNode(words);
-      var img = document.createElement("img");
-      eval3space.appendChild(img);
-      eval3space.appendChild(wordsNode);
-      img.src = ''; //-----------------------------------------LOADING GIF HERE
-    } // end of baldPhaseTwo
-
-
-
-    // function baldPhaseThree()  {
-    //   var words = 'Oh wow, you weren\'t joking... Please wait while I come up with a solution.' ;
-    //   var wordsNode = document.createTextNode(words);
-    //   var img = document.createElement("img");
-    //   eval3space.appendChild(img);
-    //   img.src = '';
-    // } // end of baldPhaseThree
-
-    function baldExit()  {
+  function baldExit()  {
       window.location.href = "results.html";
-    }
-
-
-  setTimeout(function() {
-      baldPhaseOne();
-  }, 0);
-  setTimeout(function() {
-      baldPhaseTwo();
-  }, 3000);
-  setTimeout(function() {
-      baldPhaseThree();
-  }, 6000);
-  setTimeout(function() {
-    baldExit();
-  }, 13000);
-
-
-
-};  // end of bald function
-
-
+    };
+    setTimeout(function() {
+        baldExit();
+    }, 16000);
+  };  // end of bald
 
 // this is where we need to actually call the function
 
@@ -363,7 +357,7 @@ function checkRunMe() {
   }
 
   if (runMe == 'Respiratory') {
-  Respiratory();
+  respiratory();
   }
 
   if (runMe == 'Feet') {

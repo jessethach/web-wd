@@ -17,6 +17,19 @@ function PrintWords(where,what,timer) {
   }, timer);
 };  // end of PrintWords function
 
+function PrintImage(where,what,timer) {
+  this.where = where;
+  this.what = what;
+  this.timer = timer;
+  setTimeout(function() {
+    var imgElement = document.createElement('img');
+    imgElement.src = what;
+    where.appendChild(imgElement);
+    var linebreak = document.createElement("br");
+    where.appendChild(linebreak);
+  }, timer);
+};  // end of PrintImage function
+
 function EmbarrassingSymptom()  {
       //console.log("Embarrassing Symptom has executed");
     var RightSpace = document.getElementById('resultRight');
@@ -47,6 +60,22 @@ function EmbarrassingSymptom()  {
       words = 'People not quite as bad off as you!';
       PrintWords(RightSpace,words,27000);
 };  // end EmbarrassingSymptom function
+
+function bald() {
+  var RightSpace = document.getElementById('resultRight');
+  var LeftSpace = document.getElementById('resultLeft');
+  var imgElement = document.createElement('img');
+  LeftSpace.appendChild(imgElement);
+  var words = 'Oh wow, you weren\'t joking... This is very serious, and could be hazardous'
+  PrintWords(RightSpace,words,0);
+  words = 'Your big shiny head could possibly blind random civilians';
+  PrintWords(RightSpace,words,2000);
+  words = 'Pleae stay out of public for now, I\'m going to give you a very special prescription.';
+  PrintWords(RightSpace,words,7000);
+  PrintImage(LeftSpace,'img/hatPrescription.jpg',10000);
+  words = 'May god have mercy on your soul...';
+  PrintWords(RightSpace,words,12000);
+}; //end of bald function
 
 
 
