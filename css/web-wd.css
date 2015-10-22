@@ -1,6 +1,7 @@
 /*////////////////////////////////////////////*/
 
 /*Nav menu*/
+
 header nav ol {
   margin: 0px;
   padding: 15px 15px 15px 30px;
@@ -93,10 +94,21 @@ form #frontSubmitButton {
   -webkit-filter: grayscale(100%);
 }
 
-.aboutus img hover {
-
+.aboutus img:hover {
+  -webkit-filter: grayscale(0%);
 }
 
+#chase {
+  padding: 2rem 1rem 2rem 0rem;
+}
+
+#jared {
+  padding: 2rem 1rem 2rem 0rem;
+}
+
+#jesse {
+  padding: 2rem 1rem 2rem 0rem;
+}
 
 /*////////////////////////////////////////////*/
 
@@ -148,6 +160,10 @@ form #frontSubmitButton {
 }
 
 /*charity info*/
+
+#hide {
+  display: none;
+}
 
 .charity img {
   max-width: 150px;
