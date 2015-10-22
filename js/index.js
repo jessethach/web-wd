@@ -17,40 +17,26 @@ var Condition = function(listedCondition) {
 }
 
 
+new Condition ('Lupus');
+new Condition ('Embarrassing Symptom');
+new Condition ('Respiratory');
+new Condition ('Feet');
+new Condition ('Rash');
+new Condition ('Balding');
 
-
-new Condition ('Lupus','lupus');
-new Condition ('Embarrassing Symptom','embarrassingsymptom');
-new Condition ('Respiratory', 'respiratory');
-new Condition ('Feet', 'feet');
-new Condition ('Rash', 'rash');
-new Condition ('Balding','bald');
-
-// ,lupusFunction
-// ,cancerFunction
-// ,weirdgrowthFunction
-// ,onfireFunction
-
-var submitButton = document.getElementById("submitButton");
-
-
+var submitButton = document.getElementById("frontSubmitButton");
 
 submitButton.addEventListener('click', function() {
-  // this needs to call the function (second part of the condition) of the condition selected in the drop down box
-  // console.log("This process is working if something is written below ...");
   var chosen = document.getElementById("conditionList");
-  var chosenOne = chosen.options[chosen.selectedIndex].text;
-  console.log(chosenOne);
-  var chosenStowed = JSON.stringify(chosenOne);
-  localStorage.setItem('condition',chosenStowed);
-  window.location.href = "eval.html";
-  // for loop, search in allConditions, find where chosenOne matches, then run the function ...
+  console.log(conditionList.value);
+  if (conditionList.value == 'please select from the list below') {
+    alert('You must select a condition to continue');
+  } else  {
+    var chosenOne = chosen.options[chosen.selectedIndex].text;
+    console.log(chosenOne);
+    var chosenStowed = JSON.stringify(chosenOne);
+    localStorage.setItem('condition',chosenStowed);
+    window.location.href = "eval.html";
+  };
 }); // end of submitButton
-
-
-
-
-
-// localStorage stuff goes here
-
 
