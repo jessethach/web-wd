@@ -3,7 +3,7 @@
 }
 
 .center-box {
-  width: 50%;
+  width: 60%;
   margin: auto;
   padding: 10px;
   border-style: 1px;
@@ -43,19 +43,31 @@ header nav li a:hover {
 
 /*main page form*/
 .center-box legend {
-  margin: 1rem 1rem 1rem 5rem;
+  /*margin: 5rem 1rem 5rem 1rem;*/
+  padding: 2rem 1rem 2rem 0rem;
 }
 
-/*.center-box #patientAge {
-  float:right;
-  clear:both;
+.center-box .rows {
+  padding: 10px;
+}
+
+.center-box #genders {
+ width: 50%;
+ padding: 2rem 0rem 2rem 0rem;
+}
+
+/*.center-box label {
+padding-left: 5rem;
 }*/
 
-.center-box #patientName {
-  /*float:right;*/
+.center-box #conditionList {
+  padding: 2rem 0rem 2rem 0rem;
   /*clear:both;*/
 }
 
-.center-box fieldset {
+/*.center-box fieldset {
   border: 1px solid #D1D1D1;
+}*/
+
+form #submitButton {
 }
