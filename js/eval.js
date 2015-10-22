@@ -56,29 +56,81 @@ function PrintWords(where,what,timer)	{
 	}, timer);
 };	// end of PrintWords function
 
+function PrintImage(where,what,timer) {
+  this.where = where;
+  this.what = what;
+  this.timer = timer;
+  setTimeout(function() {
+    var imgElement = document.createElement('img');
+    imgElement.src = what;
+    where.appendChild(imgElement);
+    var linebreak = document.createElement("br");
+    where.appendChild(linebreak);
+  }, timer);
+};  // end of PrintImage function
+
 function EmbarrassingSymptom()  {
-  console.log("Embarrassing Symptom has been triggered");
   var eval1space = document.getElementById('eval1');
-  var words = 'Hello there you beautiful bastard you!';
+  var eval2space = document.getElementById('eval2');
+  var eval3space = document.getElementById('eval3');
+    function EmbarrassingSymptom1()  {
+      //console.log("Embarrassing Symptom has been triggered");
+      var eval1space = document.getElementById('eval1');
+      PrintImage(eval1space,'img/stern-doctor.jpg',0);
+      var words = 'Hello there,';
       PrintWords(eval1space,words,2000);
-      words = 'Now hear this motherfucker!';
-      PrintWords(eval1space,words,3000);
+      words = 'My name is Doctor Clayton and I\'ll be your online physician this afternoon.';
+      PrintWords(eval1space,words,4000);
+      words = 'I see you selected \"Embarrassing\" ... that\'s poorly named, there isn\'t anything to be embarrassed about.'
+      PrintWords(eval1space,words,8000);
+      words = 'I assure you that your privacy and comfort are my chief concerns. I\'m going to conduct a remote scan to see what we\'re up against here.'
+      PrintWords(eval1space,words,13000);
+      words = 'If you\'ll just hold still the scan will be starting in just a moment.'
+      PrintWords(eval1space,words,18000);
+    };  // end EmbarrassingSymptom1
+    EmbarrassingSymptom1();
+    function EmbarrassingSymptom2()  {
+      var eval2space = document.getElementById('eval2');
+      words = 'SCAN INITIALIZING ... '
+      PrintWords(eval2space,words,20000);
 
-  function EmbarrassingSymptom2()  {
-	    var words = 'And I am the very model of a modern major general';
-	    var wordsNode = document.createTextNode(words);
-	    eval2space.appendChild(wordsNode);
-	  	} // end of EmbarrassingSymptomPhaseTwo
-  function EmbarrassingSymptom3()  {
-	    var img = document.createElement("img");
-	    eval3space.appendChild(img);
-	    img.src = '/home/jared/b34/web-wd/img/logo.png';
-	  	} // end of EmbarrassingSymptomPhaseThree
-  function EmbarrassingSymptomX()  {
-	    window.location.href = "results.html";
-	  	}
+      setTimeout(function() {
+      var audio = new Audio('audio/Microwave.mp3');
+      audio.play();
+      }, 21000);
 
-};  // end of EmbarrassingSymptom
+      PrintImage(eval2space,'img/FullCat.gif',23000);
+      // this is to crash evalspace 2 so the gif stops playing
+      setTimeout(function() {
+        var myNode = document.getElementById('eval2');
+        while (myNode.firstChild) {
+          myNode.removeChild(myNode.firstChild);
+        };
+      }, 38000);     
+    };   // end of EmbarrassingSymptom2
+    EmbarrassingSymptom2();
+    function EmbarrassingSymptom3()  {
+      var eval3space = document.getElementById('eval3');
+      words = 'Please give me a moment to look over this scan, I\'ll have your results shortly.';
+      PrintWords(eval3space,words,40000);
+    }; // end of EmbarrassingSymptom3()
+    EmbarrassingSymptom3();
+    // exit mechanism to result page
+    function EmbarrassingSymptomExit()  {
+      window.location.href = "results.html";
+    }
+    setTimeout(function() {
+        EmbarrassingSymptomExit();
+    }, 46000);
+  };  // end of EmbarrassingSymptom
+
+
+
+
+
+
+
+
 
 //respitory function declared
 function Respiratory()  {

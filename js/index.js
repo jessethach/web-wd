@@ -51,22 +51,6 @@ submitButton.addEventListener('click', function() {
 
 
 
-
-/*
-
-
-function storeConditions {
-  for (var i = 0; i < allConditions.length; i++)  {
-    if (chosenOne == allConditions[i].listedCondition)  {
-      // this.removeEventListener('click', arguments.callee);
-      localStorage.setItem('condition',);
-      // localStorage.setItem('allConditions', JSON.stringify(allConditions));
-      window.location.href = "eval.html";
-    } // end of if statement
-  } // end of for loop
-
-}
-
-*/
+// localStorage stuff goes here
 
 
