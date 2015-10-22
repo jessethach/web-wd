@@ -24,6 +24,7 @@ new Condition ('Feet');
 new Condition ('Rash');
 new Condition ('Balding');
 
+
 var submitButton = document.getElementById("frontSubmitButton");
 
 submitButton.addEventListener('click', function() {
