@@ -17,7 +17,7 @@ var Condition = function(listedCondition) {
 }
 
 
-new Condition ('Lupus');
+new Condition ('Medical Mystery');
 new Condition ('Embarrassing Symptom');
 new Condition ('Respiratory');
 new Condition ('Feet');

@@ -6,44 +6,6 @@ console.log('unpackaged localstorage item is: ' + condition);
 var runMe = condition.replace(/\s+/g, '');
 console.log('The runMe name is now: ' + runMe);
 
-// Keep function Lupus as a template
-function Lupus()  {
-  console.log("Lupus Function has been triggered");
-  var eval1space = document.getElementById('eval1');
-  var eval2space = document.getElementById('eval2');
-  var eval3space = document.getElementById('eval3');
-  function LupusPhaseOne()  {
-    var words = 'Behold I am the phase one function of Lupus';
-    var wordsNode = document.createTextNode(words);
-    eval1space.appendChild(wordsNode);
-  } // end of LupusPhaseOne
-  function LupusPhaseTwo()  {
-    var words = 'And I am the very model of a modern major general';
-    var wordsNode = document.createTextNode(words);
-    eval2space.appendChild(wordsNode);
-  } // end of LupusPhaseTwo
-  function LupusPhaseThree()  {
-    var img = document.createElement("img");
-    eval3space.appendChild(img);
-    img.src = '/home/jared/b34/web-wd/img/logo.png';
-  } // end of LupusPhaseThree
-  function LupusExit()  {
-    window.location.href = "results.html";
-  }
-setTimeout(function() {
-    LupusPhaseOne();
-}, 0);
-setTimeout(function() {
-    LupusPhaseTwo();
-}, 3000);
-setTimeout(function() {
-    LupusPhaseThree();
-}, 6000);
-setTimeout(function() {
-  LupusExit();
-}, 9000);
-};  // end of Lupus function
-
 function PrintWords(where,what,timer)	{
 	this.where = where;
 	this.what = what;
@@ -124,11 +86,12 @@ function EmbarrassingSymptom()  {
     }, 46000);
   };  // end of EmbarrassingSymptom
 
+function medicalMystery()  {
+  var eval1space = document.getElementById('eval1');
+  var eval2space = document.getElementById('eval2');
+  var eval3space = document.getElementById('eval3');
 
-
-
-
-
+};  // end of Medical Mystery function
 
 
 
@@ -371,6 +334,10 @@ function checkRunMe() {
   if (runMe == 'Balding') {
   bald();
   };
+
+  if (runMe == 'MedicalMystery')  {
+  medicalMystery();
+  }
 }; // end of checkRunMe
 
 checkRunMe();

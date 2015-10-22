@@ -129,6 +129,10 @@ function checkRunMe() {
   if (runMe == 'Balding') {
   bald();
 	};
+
+  if (runMe == 'MedicalMystery')  {
+  medicalMystery();
+  }
 }; // end of checkRunMe
 
 checkRunMe();
