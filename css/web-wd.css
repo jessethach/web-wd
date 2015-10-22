@@ -1,15 +1,10 @@
-.center-box {
-  width: 50%;
-  margin: auto;
-  padding-top: 6rem;
-  padding-bottom: 10rem;
-}
+/*////////////////////////////////////////////*/
 
 /*Nav menu*/
 header nav ol {
   margin: 0px;
   padding: 15px 15px 15px 30px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #445878;
 }
 
 header nav ol li {
@@ -22,10 +17,12 @@ header nav ol li {
 
 header nav li a {
   color: #31353D;
+  text-decoration: none;
 }
 
 header nav li a:hover {
   color: #445878;
+  text-decoration: none;
 }
 
 header img {
@@ -39,18 +36,26 @@ header img {
 
 /*footer*/
 footer {
-  border-top: 1px solid #eee;
+  border-top: 1px solid #445878;
   padding: 15px 15px 15px 30px;
   font-size: 12px;
 }
 
 
-
 /*////////////////////////////////////////////*/
 
-/*main page form*/
+/*home page*/
+
+.center-box {
+  width: 50%;
+  margin: auto;
+  padding-top: 6rem;
+  padding-bottom: 10rem;
+}
+
+
+/*home page form*/
 .center-box legend {
-  /*margin: 5rem 1rem 5rem 1rem;*/
   padding: 2rem 1rem 2rem 0rem;
 }
 
@@ -75,6 +80,23 @@ form #frontSubmitButton {
   right:    0;
   bottom:   0;
 }
+
+/*////////////////////////////////////////////*/
+
+/*about us page*/
+
+.aboutus img {
+  max-width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-filter: grayscale(100%);
+}
+
+.aboutus img hover {
+
+}
+
 
 /*////////////////////////////////////////////*/
 
@@ -107,14 +129,6 @@ form #frontSubmitButton {
 
 /*////////////////////////////////////////////*/
 
-/*charity info*/
-
-.charity img {
-  max-width: 150px;
-  /*padding-bottom: 30px;*/
-  border: 1px solid #eee;
-}
-
 /*results page*/
 
 #results-box-left {
@@ -131,4 +145,12 @@ form #frontSubmitButton {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+/*charity info*/
+
+.charity img {
+  max-width: 150px;
+  /*padding-bottom: 30px;*/
+  border: 1px solid #eee;
 }
