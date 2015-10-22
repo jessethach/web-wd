@@ -295,7 +295,7 @@ function bald()  {
 
 
   function baldPhaseOne()  {
-      var words = 'Hello, I\'m Dr.Bednarski, and I\'ll be your online physician.';
+      var words = 'Hello, I\'m Dr.Hackenbush, and I\'ll be your online physician.';
       var wordsNode = document.createTextNode(words);
       eval1space.appendChild(wordsNode);
     } // end of baldPhaseOne
