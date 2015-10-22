@@ -78,27 +78,21 @@ function bald() {
 }; //end of bald function
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+function feet() {
+  var RightSpace = document.getElementById('resultRight');
+  var LeftSpace = document.getElementById('resultLeft');
+  var imgElement = document.createElement('img');
+  LeftSpace.appendChild(imgElement);
+  var words = 'This is very serious. Your feet dont just stink, they\'re creating hazardous fumes.'
+  PrintWords(RightSpace,words,2000);
+  words = 'I\'ll need to write you a special prescription for this.';
+  PrintWords(RightSpace,words,4000);
+  PrintImage(LeftSpace,'img/feetPrescription.jpg',5000);
+  words = 'Every day I\'ll need you to put these on your feet and secure them with the tape.';
+  PrintWords(RightSpace,words,6000);
+  words = 'Good luck.';
+  PrintWords(RightSpace,words,8000);
+}; //end of feet function
 
 
 
