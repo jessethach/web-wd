@@ -23,23 +23,39 @@
       <!-- insert script into head which populates from local storage if returning user-->
         <fieldset>
         <legend>Patient Information</legend>
-        <p>
-        <label for="name">Name</label>
-        <input type="text" id="patientName" />
-        </p>
-        <p>
-        <label for="name">Patient Age (in Earth years) *:</label>
-        <input type="text" id="patientAge" length="10"/>
-        </p>
-        <p><label for="gender">Gender *:</label>
-        <input id="male" type="radio" name="gender" value="m">
-        <label for="male">Male</label>
-        <input id="female" type="radio" name="gender" value="f">
-        <label for="female">Female</label>
-        </p>
 
-        <select id="conditionList"></select>
-        <input id="submitButton" type="button" value="clickme" />
+        <div class="row">
+          <div class="six columns">
+            <label for="name">Name</label>
+            <input type="text" id="patientName" />
+          </div>
+          <div class="six columns">
+            <label for="list">What's Wrong</label>
+            <select id="conditionList"></select>
+          </div>
+        </div>
+
+        <div class="row" id="genders">
+          <div class="two columns">
+            <label for="male">Male</label>
+            <input id="male" type="radio" name="gender" value="m">
+          </div>
+          <div class="two columns">
+            <label for="female">Female</label>
+            <input id="female" type="radio" name="gender" value="f">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="six columns">
+              <label for="name">Patient Age (in Earth years)</label>
+              <input type="text" id="patientAge" length="10"/>
+          </div>
+          <div class="six columns">
+              <input id="submitButton" type="button" value="clickme" />
+          </div>
+        </div>
+
         <!-- <p>* required field</p> -->
         </fieldset>
       </form>
