@@ -106,7 +106,7 @@ respiratoryPhaseOne();
 
   function respiratoryPhaseTwo() {
     var eval2space = document.getElementById('eval2');
-    words = 'I will to need to preform a chest scan to determine the problem, please hold still.';
+    words = 'I will to need to perform a chest scan to determine the problem. Please hold still.';
     PrintWords(eval1space,words,3000);
 
 
@@ -219,7 +219,7 @@ function rash()  {
 
    function rashPhaseThree() {
     var eval3space = document.getElementById('eval3');
-    words = 'Thats not good... let me think about that for a moment';
+    words = 'That\'s not good... let me think about that for a moment.';
     PrintWords(eval3space,words,6000);
     setTimeout(function() {
       createButton();
