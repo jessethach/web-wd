@@ -81,9 +81,9 @@ function bald() {
   var LeftSpace = document.getElementById('resultLeft');
   var imgElement = document.createElement('img');
   LeftSpace.appendChild(imgElement);
-  var words = 'Oh wow, you weren\'t joking... This is very serious, and could be hazardous'
+  var words = 'Oh wow, you weren\'t joking... This is very serious, and could be hazardous.';
   PrintWords(RightSpace,words,0);
-  words = 'Your big shiny head could possibly blind random civilians';
+  words = 'Your big shiny head could possibly blind random civilians.';
   PrintWords(RightSpace,words,2000);
   words = 'Please stay out of public for now, I\'m going to give you a very special prescription.';
   PrintWords(RightSpace,words,7000);
@@ -120,11 +120,11 @@ function rash() {
   var LeftSpace = document.getElementById('resultLeft');
   var imgElement = document.createElement('img');
   LeftSpace.appendChild(imgElement);
-  var words = 'I\'ve come up with and interesting theory...';
+  var words = 'I\'ve come up with an interesting theory...';
   PrintWords(RightSpace,words,2000);
   words = 'You\'ve contracted Spattergroit.';
   PrintWords(RightSpace,words,4000);
-  words = 'Unfortunatly there is only cure, and its not pleasant. I\'m writing the prescription now.';
+  words = 'Unfortunately there is only cure, and its not pleasant. I\'m writing the prescription now.';
   PrintWords(RightSpace,words,6000);
   PrintImage(LeftSpace,'img/spattergroitPrescription.jpg',8000);
   revealCharity(8000);
@@ -140,7 +140,7 @@ function feet() {
   words = 'I\'ll need to write you a special prescription for this.';
   PrintWords(RightSpace,words,4000);
   PrintImage(LeftSpace,'img/feetPrescription.jpg',5000);
-  words = 'Every day I\'ll need you to put these on your feet and secure them with the tape.';
+  words = 'Every day I\'ll need you to put these on your feet and secure them with tape.';
   PrintWords(RightSpace,words,6000);
   words = 'Good luck.';
   PrintWords(RightSpace,words,8000);
