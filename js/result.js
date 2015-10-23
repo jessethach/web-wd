@@ -5,10 +5,19 @@ console.log('unpackaged localstorage item is: ' + condition);
 var runMe = condition.replace(/\s+/g, '');
 console.log('The runMe name is now: ' + runMe);
 
-function revealCharity()  {
-  var reveal = document.getElementById("hide");
-  reveal.id = "show";
-};
+// so revealCharity(6000) should bring up the charity info 6 seconds later
+function revealCharity(timer) {
+  this.timer = timer;
+  function IDcrasher()  {
+      var reveal = document.getElementById("hide");
+      reveal.id = "show";
+  };  // end of IDcrasher
+  setTimeout(function() {
+      IDcrasher();
+  },timer);
+};  // end of revealCharity
+
+
 
 function PrintWords(where,what,timer) {
   this.where = where;
@@ -64,9 +73,7 @@ function EmbarrassingSymptom()  {
       PrintWords(RightSpace,words,24000);
       words = 'People not quite as bad off as you!';
       PrintWords(RightSpace,words,27000);
-      setTimeout(function() {
-      revealCharity();
-      }, 27000);
+      revealCharity(27000);
 };  // end EmbarrassingSymptom function
 
 function bald() {
@@ -83,6 +90,7 @@ function bald() {
   PrintImage(LeftSpace,'img/hatPrescription.jpg',10000);
   words = 'May god have mercy on your soul...';
   PrintWords(RightSpace,words,12000);
+  revealCharity(12000);
 }; //end of bald function
 
 function respiratory() {
@@ -101,6 +109,7 @@ function respiratory() {
   PrintWords(RightSpace,words,8000);
   words = 'Good luck!';
   PrintWords(RightSpace,words,8000);
+  revealCharity(8000);
 }; //end of function
 
 
@@ -135,6 +144,7 @@ function feet() {
   PrintWords(RightSpace,words,6000);
   words = 'Good luck.';
   PrintWords(RightSpace,words,8000);
+  revealCharity(8000);
 }; //end of feet function
 
 
