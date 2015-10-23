@@ -5,6 +5,11 @@ console.log('unpackaged localstorage item is: ' + condition);
 var runMe = condition.replace(/\s+/g, '');
 console.log('The runMe name is now: ' + runMe);
 
+function revealCharity()  {
+  var reveal = document.getElementById("hide");
+  reveal.id = "show";
+};
+
 function PrintWords(where,what,timer) {
   this.where = where;
   this.what = what;
@@ -59,6 +64,9 @@ function EmbarrassingSymptom()  {
       PrintWords(RightSpace,words,24000);
       words = 'People not quite as bad off as you!';
       PrintWords(RightSpace,words,27000);
+      setTimeout(function() {
+      revealCharity();
+      }, 27000); 
 };  // end EmbarrassingSymptom function
 
 function bald() {
@@ -94,10 +102,6 @@ function feet() {
   PrintWords(RightSpace,words,8000);
 }; //end of feet function
 
-
-
-
-
 // this is where we need to actually call the function
 
 function checkRunMe() {
@@ -124,9 +128,6 @@ function checkRunMe() {
   bald();
 	};
 
-  if (runMe == 'MedicalMystery')  {
-  medicalMystery();
-  }
 }; // end of checkRunMe
 
 checkRunMe();
