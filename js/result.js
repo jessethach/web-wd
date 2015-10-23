@@ -78,12 +78,30 @@ function bald() {
   PrintWords(RightSpace,words,0);
   words = 'Your big shiny head could possibly blind random civilians';
   PrintWords(RightSpace,words,2000);
-  words = 'Pleae stay out of public for now, I\'m going to give you a very special prescription.';
+  words = 'Please stay out of public for now, I\'m going to give you a very special prescription.';
   PrintWords(RightSpace,words,7000);
   PrintImage(LeftSpace,'img/hatPrescription.jpg',10000);
   words = 'May god have mercy on your soul...';
   PrintWords(RightSpace,words,12000);
 }; //end of bald function
+
+function respiratory() {
+  var RightSpace = document.getElementById('resultRight');
+  var LeftSpace = document.getElementById('resultLeft');
+  var imgElement = document.createElement('img');
+  LeftSpace.appendChild(imgElement);
+  var words = 'Oh wow, this is very serious.';
+  PrintWords(RightSpace,words,1000);
+  words = 'You seem to have gremlins.';
+  PrintWords(RightSpace,words,2000);
+  words = 'You\'ll need to take this prescription right away.';
+  PrintImage(LeftSpace,'img/gremlinsPrescription.jpg',6000);
+  PrintWords(RightSpace,words,4000);
+  words = 'If you can\'t take the pills without water, you\'ll need to administer them through the other end...';
+  PrintWords(RightSpace,words,8000);
+  words = 'Good luck!';
+  PrintWords(RightSpace,words,8000);
+}; //end of function
 
 
 function feet() {
@@ -102,6 +120,7 @@ function feet() {
   PrintWords(RightSpace,words,8000);
 }; //end of feet function
 
+
 // this is where we need to actually call the function
 
 function checkRunMe() {
@@ -113,7 +132,7 @@ function checkRunMe() {
   }
 
   if (runMe == 'Respiratory') {
-  Respiratory();
+  respiratory();
   }
 
   if (runMe == 'Feet') {
