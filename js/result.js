@@ -66,7 +66,7 @@ function EmbarrassingSymptom()  {
       PrintWords(RightSpace,words,27000);
       setTimeout(function() {
       revealCharity();
-      }, 27000); 
+      }, 27000);
 };  // end EmbarrassingSymptom function
 
 function bald() {
@@ -103,6 +103,23 @@ function respiratory() {
   PrintWords(RightSpace,words,8000);
 }; //end of function
 
+
+
+
+function rash() {
+  var RightSpace = document.getElementById('resultRight');
+  var LeftSpace = document.getElementById('resultLeft');
+  var imgElement = document.createElement('img');
+  LeftSpace.appendChild(imgElement);
+  var words = 'I\'ve come up with and interesting theory...';
+  PrintWords(RightSpace,words,2000);
+  words = 'You\'ve contracted Spattergroit.';
+  PrintWords(RightSpace,words,4000);
+  words = 'Unfortunatly there is only cure, and its not pleasant. I\'m writing the prescription now.';
+  PrintWords(RightSpace,words,6000);
+  PrintImage(LeftSpace,'img/spattergroitPrescription.jpg',8000);
+  revealCharity(8000);
+}; //end of rash function
 
 function feet() {
   var RightSpace = document.getElementById('resultRight');
