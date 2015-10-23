@@ -219,7 +219,7 @@ function rash()  {
 
    function rashPhaseThree() {
     var eval3space = document.getElementById('eval3');
-    words = 'I\'ve come up with an interesting theory...';
+    words = 'Thats not good... let me think about that for a moment';
     PrintWords(eval3space,words,6000);
     setTimeout(function() {
       createButton();
