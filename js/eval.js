@@ -87,12 +87,6 @@ function EmbarrassingSymptom()  {
     }, 46000);
   };  // end of EmbarrassingSymptom
 
-function medicalMystery()  {
-  var eval1space = document.getElementById('eval1');
-  var eval2space = document.getElementById('eval2');
-  var eval3space = document.getElementById('eval3');
-
-};  // end of Medical Mystery function
 
 
 
@@ -298,9 +292,6 @@ function checkRunMe() {
   bald();
   };
 
-  if (runMe == 'MedicalMystery')  {
-  medicalMystery();
-  }
 }; // end of checkRunMe
 
 checkRunMe();
