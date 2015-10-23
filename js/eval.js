@@ -113,8 +113,17 @@ respiratoryPhaseOne();
   function respiratoryPhaseTwo() {
     var eval2space = document.getElementById('eval2');
     words = 'I will to need to preform a chest scan to determine the problem, please hold still.';
-    PrintWords(eval2space,words,3000);
-    PrintImage(eval2space,'img/xray-lungs.jpg',6000);
+    PrintWords(eval1space,words,3000);
+
+
+
+    setTimeout(function() {
+      var audio = new Audio('audio/Microwave.mp3');
+      audio.play();
+      }, 5000);
+
+
+    PrintImage(eval2space,'img/xray-lungs.jpg',8000);
   };
 respiratoryPhaseTwo();
 
@@ -131,10 +140,10 @@ respiratoryPhaseTwo();
   function respiratoryPhaseThree() {
     var eval3space = document.getElementById('eval3');
     words = 'Please proceed to the results page while I review your scan.';
-    PrintWords(eval3space,words,6000);
+    PrintWords(eval3space,words,10000);
     setTimeout(function() {
       createButton();
-    }, 6000);
+    }, 10000);
   };
 respiratoryPhaseThree();
 };
